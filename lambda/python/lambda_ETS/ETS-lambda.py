@@ -8,7 +8,7 @@ import boto3
 # http://docs.aws.amazon.com/elastictranscoder/latest/developerguide/sample-code.html#python-pipeline
 
 # pipeline_id = 'Enter your pipeline id here.'
-pipeline_id = '1484456038659-osho6w'
+pipeline_id = '<pipeline_id>'
 
 # This is the name of the input key that you would like to transcode.
 # input_key = 'Enter your input key here.' input key will be received by the lambda_handler
