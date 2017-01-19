@@ -112,7 +112,7 @@ def lambda_handler(event, context):
         
     sns = boto3.client('sns')
     response = sns.publish (
-        TopicArn = 'arn:aws:sns:ap-northeast-1:176669704756:s3-inventory',
+        TopicArn = '<topic arn>',
         Message = message,
         Subject = 'S3 Usage Report'
     )
