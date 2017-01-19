@@ -10,7 +10,7 @@ def lambda_handler(event, context):
 	# Define syslog logger
     my_logger = logging.getLogger('MyLogger')
     my_logger.setLevel(logging.INFO)
-    sysloghandler = logging.handlers.SysLogHandler(address = ('52.78.29.157',514),socktype=socket.SOCK_DGRAM)
+    sysloghandler = logging.handlers.SysLogHandler(address = ('<server IP address>',514),socktype=socket.SOCK_DGRAM)
     my_logger.addHandler(sysloghandler)
     data = event.get('awslogs',{}).get('data')
     if not data:
